@@ -12,7 +12,7 @@
 @layer base {
   :root {
     --background: 0 0% 98%;          /* #FAFAFA */
-    --foreground: 244, 17, 16;       /* #1F2937 */
+    --foreground: 244 17% 16%;       /* #1F2937 */
     
     --card: 0 0% 100%;
     --card-foreground: 220 14% 12%;
@@ -21,16 +21,16 @@
     --popover-foreground: 220 14% 12%;
     
     --primary: 189 88% 41%;          /* #06B6D4 - same teal */
-    --primary-foreground: 32, 51, 42;
+    --primary-foreground: 32 51% 42%;
     
     --secondary: 220 14% 96%;
     --secondary-foreground: 220 14% 12%;
     
     --muted: 220 14% 96%;            /* #F9FAFB */
-    --muted-foreground:27, 30, 25; /* #6B7280 */
+    --muted-foreground:27 30% 25%; /* #6B7280 */
     
     --accent: 239 84% 67%;           /* #6366F1 - same indigo */
-    --accent-foreground: 35, 44, 51;
+    --accent-foreground: 35 44% 51%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
