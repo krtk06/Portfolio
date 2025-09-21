@@ -222,3 +222,12 @@
   transform: scale(1.05);
   }
   }
+
+
+
+  .outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 3px;
+    font-style: normal;
+  }

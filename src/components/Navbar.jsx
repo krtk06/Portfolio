@@ -42,7 +42,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('home')}
-            className="text-xl font-bold text-gradient focus-ring rounded-lg px-2 py-1"
+            className="text-xl font-bold text-gradient focus-ring rounded-lg px-2 py-1 name"
           >
             KN
           </button>

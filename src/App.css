@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.outfit-name {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 3px;
+  font-style: normal;
+}
