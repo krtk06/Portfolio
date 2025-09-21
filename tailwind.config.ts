@@ -1,15 +1,21 @@
 import type { Config } from "tailwindcss";
 
 export default {
+
+
 	darkMode: ["class"],
 	content: [
 		"./pages/**/*.{js,jsx,ts,tsx}",
 		"./components/**/*.{js,jsx,ts,tsx}",
 		"./app/**/*.{js,jsx,ts,tsx}",
 		"./src/**/*.{js,jsx,ts,tsx}",
+		"./index.html", "./src/**/*.{js,jsx,ts,tsx}",
 	],
 	prefix: "",
 	theme: {
+		fontFamily: {
+			sans: ["Outfit", "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+		},
 		container: {
 			center: true,
 			padding: '2rem',
@@ -93,4 +99,8 @@ export default {
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
+
+
 } satisfies Config;
+
+
