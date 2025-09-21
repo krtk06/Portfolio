@@ -45,9 +45,9 @@ const Navbar = ({ theme, toggleTheme }) => {
             style={
               {
                 fontFamily: '"Outfit", sans-serif',
-                fontOpticalSizing: auto,
-                fontWeight: 3,
-                fontStyle: normal
+                fontOpticalSizing: 'auto',
+                fontWeight: 300,
+                fontStyle: 'normal'
               }
             }
           >
