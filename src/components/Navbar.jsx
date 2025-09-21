@@ -38,10 +38,16 @@ const Navbar = ({ theme, toggleTheme }) => {
       <nav className={`mx-auto max-w-7xl rounded-2xl navbar-backdrop transition-all duration-300 ${isScrolled ? 'py-3 px-6' : 'py-4 px-8'
         }`}>
         <div className="flex items-center justify-between">
-          {/* Logo */}
+
           <button
             onClick={() => scrollToSection('home')}
-            className="text-xl px-2 py-1 name outfit"
+            className="text-xl px-2 py-1 name"
+            style={{
+              fontFamily: '"Outfit", sans-serif',
+              fontOpticalSizing: 'auto',
+              fontWeight: 300,
+              fontStyle: 'normal',
+            }}
           >
             KN
           </button>
