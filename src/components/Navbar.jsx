@@ -43,7 +43,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             onClick={() => scrollToSection('home')}
             className="text-xl px-2 py-1 name"
             style={{
-              fontFamily: '"Outfit", sans-serif',
+              fontFamily: '"Outfit"',
               fontOpticalSizing: 'auto',
               fontWeight: 300,
               fontStyle: 'normal',
