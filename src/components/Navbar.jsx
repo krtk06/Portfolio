@@ -35,14 +35,21 @@ const Navbar = ({ theme, toggleTheme }) => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4">
-      <nav className={`mx-auto max-w-7xl rounded-2xl navbar-backdrop transition-all duration-300 ${
-        isScrolled ? 'py-3 px-6' : 'py-4 px-8'
-      }`}>
+      <nav className={`mx-auto max-w-7xl rounded-2xl navbar-backdrop transition-all duration-300 ${isScrolled ? 'py-3 px-6' : 'py-4 px-8'
+        }`}>
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button
             onClick={() => scrollToSection('home')}
-            className="text-xl font-bold text-gradient focus-ring rounded-lg px-2 py-1 name"
+            className="text-xl px-2 py-1 name"
+            style={
+              {
+                fontFamily: '"Outfit", sans-serif',
+                fontOpticalSizing: auto,
+                fontWeight: 3,
+                fontStyle: normal
+              }
+            }
           >
             KN
           </button>
@@ -63,7 +70,7 @@ const Navbar = ({ theme, toggleTheme }) => {
           {/* Right side - Theme toggle and social links */}
           <div className="flex items-center space-x-4">
             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-            
+
             <div className="flex items-center space-x-3">
               <a
                 href="https://github.com/krtk06"
@@ -74,7 +81,7 @@ const Navbar = ({ theme, toggleTheme }) => {
               >
                 <GitHubIcon className="w-5 h-5" />
               </a>
-              
+
               <a
                 href="https://www.linkedin.com/in/kartheek-nistala"
                 target="_blank"
