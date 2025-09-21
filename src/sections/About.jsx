@@ -105,7 +105,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="grid sm:grid-cols-2 gap-2">
+          {/* <div className="grid sm:grid-cols-2 gap-2">
               {highlights.map((highlight, index) => (
                 <div
                   key={highlight.title}
@@ -121,7 +121,7 @@ const About = () => {
                   <p className="text-sm text-muted-foreground">{highlight.description}</p>
                 </div>
               ))}
-            </div>
+            </div> */}
         </div>
           
       </div>
