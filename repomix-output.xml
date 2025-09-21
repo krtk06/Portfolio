@@ -6595,105 +6595,6 @@ export default Projects;
 /// <reference types="vite/client" />
 </file>
 
-<file path="tailwind.config.ts">
-import type { Config } from "tailwindcss";
-
-export default {
-	darkMode: ["class"],
-	content: [
-		"./pages/**/*.{js,jsx,ts,tsx}",
-		"./components/**/*.{js,jsx,ts,tsx}",
-		"./app/**/*.{js,jsx,ts,tsx}",
-		"./src/**/*.{js,jsx,ts,tsx}",
-	],
-	prefix: "",
-	theme: {
-		container: {
-			center: true,
-			padding: '2rem',
-			screens: {
-				'2xl': '1400px'
-			}
-		},
-		extend: {
-			colors: {
-				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
-				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))',
-				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
-				},
-				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
-				},
-				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
-				},
-				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))'
-				},
-				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))'
-				},
-				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
-				},
-				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))'
-				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
-			},
-			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
-			},
-			keyframes: {
-				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
-				},
-				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
-				}
-			},
-			animation: {
-				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
-		}
-	},
-	plugins: [require("tailwindcss-animate")],
-} satisfies Config;
-</file>
-
 <file path="tsconfig.app.json">
 {
   "compilerOptions": {
@@ -6934,42 +6835,111 @@ const About = () => {
 export default About;
 </file>
 
-<file path="index.html">
-<!DOCTYPE html>
-<html lang="en">
+<file path="tailwind.config.ts">
+import type { Config } from "tailwindcss";
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kartheek Nistala</title>
-  <meta name="description"
-    content="Full Stack Developer specializing in React, Node.js, and modern web technologies. Creating beautiful, functional digital experiences." />
-  <meta name="author" content="Kartheek Nistala" />
-  <meta name="keywords"
-    content="full stack developer, web developer, React, Node.js, portfolio, JavaScript, TypeScript" />
+export default {
 
-  <meta property="og:title" content="Kartheek Nistala" />
-  <meta property="og:description"
-    content="Full Stack Developer specializing in React, Node.js, and modern web technologies. Creating beautiful, functional digital experiences." />
-  <meta property="og:type" content="website" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@krtk2805" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Outfit:wght@100..900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+	darkMode: ["class"],
+	content: [
+		"./pages/**/*.{js,jsx,ts,tsx}",
+		"./components/**/*.{js,jsx,ts,tsx}",
+		"./app/**/*.{js,jsx,ts,tsx}",
+		"./src/**/*.{js,jsx,ts,tsx}",
+		"./index.html", "./src/**/*.{js,jsx,ts,tsx}",
+	],
+	prefix: "",
+	theme: {
+		fontFamily: {
+			sans: ["Outfit", "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+		},
+		container: {
+			center: true,
+			padding: '2rem',
+			screens: {
+				'2xl': '1400px'
+			}
+		},
+		extend: {
+			colors: {
+				border: 'hsl(var(--border))',
+				input: 'hsl(var(--input))',
+				ring: 'hsl(var(--ring))',
+				background: 'hsl(var(--background))',
+				foreground: 'hsl(var(--foreground))',
+				primary: {
+					DEFAULT: 'hsl(var(--primary))',
+					foreground: 'hsl(var(--primary-foreground))'
+				},
+				secondary: {
+					DEFAULT: 'hsl(var(--secondary))',
+					foreground: 'hsl(var(--secondary-foreground))'
+				},
+				destructive: {
+					DEFAULT: 'hsl(var(--destructive))',
+					foreground: 'hsl(var(--destructive-foreground))'
+				},
+				muted: {
+					DEFAULT: 'hsl(var(--muted))',
+					foreground: 'hsl(var(--muted-foreground))'
+				},
+				accent: {
+					DEFAULT: 'hsl(var(--accent))',
+					foreground: 'hsl(var(--accent-foreground))'
+				},
+				popover: {
+					DEFAULT: 'hsl(var(--popover))',
+					foreground: 'hsl(var(--popover-foreground))'
+				},
+				card: {
+					DEFAULT: 'hsl(var(--card))',
+					foreground: 'hsl(var(--card-foreground))'
+				},
+				sidebar: {
+					DEFAULT: 'hsl(var(--sidebar-background))',
+					foreground: 'hsl(var(--sidebar-foreground))',
+					primary: 'hsl(var(--sidebar-primary))',
+					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+					accent: 'hsl(var(--sidebar-accent))',
+					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+					border: 'hsl(var(--sidebar-border))',
+					ring: 'hsl(var(--sidebar-ring))'
+				}
+			},
+			borderRadius: {
+				lg: 'var(--radius)',
+				md: 'calc(var(--radius) - 2px)',
+				sm: 'calc(var(--radius) - 4px)'
+			},
+			keyframes: {
+				'accordion-down': {
+					from: {
+						height: '0'
+					},
+					to: {
+						height: 'var(--radix-accordion-content-height)'
+					}
+				},
+				'accordion-up': {
+					from: {
+						height: 'var(--radix-accordion-content-height)'
+					},
+					to: {
+						height: '0'
+					}
+				}
+			},
+			animation: {
+				'accordion-down': 'accordion-down 0.2s ease-out',
+				'accordion-up': 'accordion-up 0.2s ease-out'
+			}
+		}
+	},
+	plugins: [require("tailwindcss-animate")],
 
-</head>
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
-
-</html>
+} satisfies Config;
 </file>
 
 <file path="src/App.css">
@@ -7025,16 +6995,45 @@ export default About;
 }
 </file>
 
+<file path="index.html">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kartheek Nistala</title>
+  <meta name="description"
+    content="Full Stack Developer specializing in React, Node.js, and modern web technologies. Creating beautiful, functional digital experiences." />
+  <meta name="author" content="Kartheek Nistala" />
+  <meta name="keywords"
+    content="full stack developer, web developer, React, Node.js, portfolio, JavaScript, TypeScript" />
+
+  <meta property="og:title" content="Kartheek Nistala" />
+  <meta property="og:description"
+    content="Full Stack Developer specializing in React, Node.js, and modern web technologies. Creating beautiful, functional digital experiences." />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@krtk2805" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
+</file>
+
 <file path="src/index.css">
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-.outfit {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
 
 
 
@@ -7260,6 +7259,26 @@ export default About;
   transform: scale(1.05);
   }
   }
+
+
+  
+.bitcount-grid-double-ink {
+  font-family: "Bitcount Grid Double Ink", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0,
+    "SZP1" 0,
+    "SZP2" 0,
+    "XPN1" 0,
+    "XPN2" 0,
+    "YPN1" 0,
+    "YPN2" 0;
+}
 </file>
 
 <file path="src/components/Navbar.jsx">
@@ -7305,16 +7324,10 @@ const Navbar = ({ theme, toggleTheme }) => {
         <div className="flex items-center justify-between">
 
           <button
-            onClick={() => scrollToSection('home')}
-            className="text-xl px-2 py-1 name"
-            style={{
-              fontFamily: '"Outfit"',
-              fontOpticalSizing: 'auto',
-              fontWeight: 300,
-              fontStyle: 'normal',
-            }}
+            onClick={() => scrollToSection("home")}
+            className="bitcount-grid-double-ink text-xl px-2 py-1"
           >
-            KN
+          &lt;krtk&gt;
           </button>
 
           {/* Desktop Navigation */}
