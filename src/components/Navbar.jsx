@@ -43,7 +43,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             onClick={() => scrollToSection("home")}
             className="bitcount-grid-double-ink text-xl px-2 py-1"
           >
-            KN
+          &lt;krtk&gt;
           </button>
 
           {/* Desktop Navigation */}
