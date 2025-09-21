@@ -42,9 +42,9 @@
 }
 
 
-.outfit-name {
+.outfit {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 3px;
+  font-weight: 300;
   font-style: normal;
 }
