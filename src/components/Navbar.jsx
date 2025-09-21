@@ -41,7 +41,7 @@ const Navbar = ({ theme, toggleTheme }) => {
 
           <button
             onClick={() => scrollToSection("home")}
-            className="font-outfit text-xl px-2 py-1"
+            className="bitcount-grid-double-ink text-xl px-2 py-1"
           >
             KN
           </button>
