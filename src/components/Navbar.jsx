@@ -40,14 +40,8 @@ const Navbar = ({ theme, toggleTheme }) => {
         <div className="flex items-center justify-between">
 
           <button
-            onClick={() => scrollToSection('home')}
-            className="text-xl px-2 py-1 name"
-            style={{
-              fontFamily: '"Outfit"',
-              fontOpticalSizing: 'auto',
-              fontWeight: 300,
-              fontStyle: 'normal',
-            }}
+            onClick={() => scrollToSection("home")}
+            className="font-outfit text-xl px-2 py-1"
           >
             KN
           </button>

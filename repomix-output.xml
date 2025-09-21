@@ -6799,42 +6799,6 @@ export default defineConfig(({ mode }) => ({
 }));
 </file>
 
-<file path="index.html">
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kartheek Nistala</title>
-  <meta name="description"
-    content="Full Stack Developer specializing in React, Node.js, and modern web technologies. Creating beautiful, functional digital experiences." />
-  <meta name="author" content="Kartheek Nistala" />
-  <meta name="keywords"
-    content="full stack developer, web developer, React, Node.js, portfolio, JavaScript, TypeScript" />
-
-  <meta property="og:title" content="Kartheek Nistala" />
-  <meta property="og:description"
-    content="Full Stack Developer specializing in React, Node.js, and modern web technologies. Creating beautiful, functional digital experiences." />
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@krtk2805" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Outfit:wght@100..900&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
-
-</html>
-</file>
-
 <file path="src/sections/About.jsx">
 import { Code, Palette, Zap, Users } from 'lucide-react';
 
@@ -6970,6 +6934,44 @@ const About = () => {
 export default About;
 </file>
 
+<file path="index.html">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kartheek Nistala</title>
+  <meta name="description"
+    content="Full Stack Developer specializing in React, Node.js, and modern web technologies. Creating beautiful, functional digital experiences." />
+  <meta name="author" content="Kartheek Nistala" />
+  <meta name="keywords"
+    content="full stack developer, web developer, React, Node.js, portfolio, JavaScript, TypeScript" />
+
+  <meta property="og:title" content="Kartheek Nistala" />
+  <meta property="og:description"
+    content="Full Stack Developer specializing in React, Node.js, and modern web technologies. Creating beautiful, functional digital experiences." />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@krtk2805" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double+Ink:wght@100..900&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
+</file>
+
 <file path="src/App.css">
 #root {
   max-width: 1280px;
@@ -7026,6 +7028,14 @@ export default About;
 <file path="src/index.css">
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 
 
 @tailwind base;
@@ -7250,15 +7260,6 @@ export default About;
   transform: scale(1.05);
   }
   }
-
-
-
-  .outfit {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-  }
 </file>
 
 <file path="src/components/Navbar.jsx">
@@ -7302,18 +7303,16 @@ const Navbar = ({ theme, toggleTheme }) => {
       <nav className={`mx-auto max-w-7xl rounded-2xl navbar-backdrop transition-all duration-300 ${isScrolled ? 'py-3 px-6' : 'py-4 px-8'
         }`}>
         <div className="flex items-center justify-between">
-          {/* Logo */}
+
           <button
             onClick={() => scrollToSection('home')}
-            className="text-xl px-2 py-1"
-            style={
-              {
-                fontFamily: '"Outfit", sans-serif',
-                fontOpticalSizing: 'auto',
-                fontWeight: 300,
-                fontStyle: 'normal'
-              }
-            }
+            className="text-xl px-2 py-1 name"
+            style={{
+              fontFamily: '"Outfit"',
+              fontOpticalSizing: 'auto',
+              fontWeight: 300,
+              fontStyle: 'normal',
+            }}
           >
             KN
           </button>
